@@ -1,0 +1,15 @@
+create table if not exists controlled_job_owner(
+system_id integer not null,
+system_name varchar(255) null,
+team_dl varchar(255) null,
+manager_name varchar(255) null,
+tech_emp_id varchar(255) null,
+po_emp_id varchar(255) null,
+tech_contact varchar(255) null,
+po_contact varchar(255) null,
+team_location varchar(255) null,
+team_availability varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint controlled_job_owner_pk primary key(system_id));

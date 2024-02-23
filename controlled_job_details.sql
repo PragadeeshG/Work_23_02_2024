@@ -1,0 +1,15 @@
+create table if not exists controlled_job_details(
+job_id integer not null,
+job_presence varchar(255) null,
+server_name varchar(255) null,
+server_ip varchar(255) null,
+script_path varchar(255) null,
+script_owner varchar(255) null,
+log_file_name varchar(255) null,
+log_file_path varchar(255) null,
+error_file_name varchar(255) null,
+error_file_location varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint controlled_job_details_pk primary key(job_id));
